@@ -6,7 +6,7 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

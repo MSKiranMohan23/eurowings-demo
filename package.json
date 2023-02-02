@@ -1,11 +1,23 @@
 {
   "devDependencies": {
-    "lerna": "^6.4.1"
+    "lerna": "^6.4.1",
+    "concurrently": "^6.0.0"
   },
   "name": "eurowings",
   "private":"true",
-  "workspaces": [
-    "packages/ewd-app", "packages/ewd-backend"
-  ],
-  "license": "UNLICENSED"
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node" :"16 || >=18"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn start-ewd-app\" \"yarn start-ewd-backend\"",
+    "start-ewd-app": "yarn workspace ewd-app start",
+    "start-ewd-backend": "yarn workspace ewd-backend start",
+    "test": "yarn workspace ewd-app test"
+  }
 }

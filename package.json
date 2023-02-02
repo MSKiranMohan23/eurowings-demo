@@ -5,6 +5,7 @@
   },
   "name": "eurowings",
   "private":"true",
+  "author": "Kirankumar Shingatalur",
   "workspaces": {
     "packages": [
       "packages/*"

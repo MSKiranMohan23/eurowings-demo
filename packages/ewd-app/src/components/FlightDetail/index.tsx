@@ -25,30 +25,30 @@ const DataComponent: React.FC<Props> = ({ data }) => {
   return (
     <div className="flightData">
       <div className="flightData__origin">
-        Departure :{" "}
-        {typeof orginDetail.city !== "undefined" ? orginDetail.city : ""}{" "}
-        {data.origin},{" "}
-        {typeof orginDetail.country !== "undefined" ? orginDetail.country : ""}
+       <div className="flightData__labelInfo">Departure: </div>
+        {typeof orginDetail.city !== "undefined" ? `${orginDetail.city} ` : ""}
+        {data.origin},
+        {typeof orginDetail.country !== "undefined" ? ` ${orginDetail.country}` : ""}
       </div>
       <div className="flightData__destination">
-        Destination:{" "}
+      <div className="flightData__labelInfo">Destination: </div>
         {typeof destinationDetail.city !== "undefined"
-          ? destinationDetail.city
-          : ""}{" "}
-        {data.destination},{" "}
+          ? `${destinationDetail.city} `
+          : ""}
+        {data.destination},
         {typeof destinationDetail.country !== "undefined"
-          ? destinationDetail.country
+          ? ` ${destinationDetail.country}`
           : ""}
       </div>
-      <div className="flightData__departure-date">{data.departureDate}</div>
-      <div className="flightData__return-date">{data.returnDate}</div>
-      <div className="flightData__seat-availability">
+      <div className="flightData__departure-date"><div className="flightData__labelInfo">Departure Date: </div>{data.departureDate}</div>
+      <div className="flightData__return-date"><div className="flightData__labelInfo">Return Date: </div>{data.returnDate}</div>
+      <div className="flightData__seat-availability"><div className="flightData__labelInfo">Available Seats: </div>
         {data.seatAvailability}
       </div>
       <div className="flightData__price">
-        {data.price.amount} {data.price.currency}
+      <div className="flightData__labelInfo">Price: </div>{data.price.amount} {data.price.currency}
       </div>
-      <div className="flightData__offer-type">{data.offerType}</div>
+      <div className="flightData__offer-type"><div className="flightData__labelInfo">Offer Type: </div>{data.offerType}</div>
     </div>
   );
 };

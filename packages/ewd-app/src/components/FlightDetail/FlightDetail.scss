@@ -21,6 +21,9 @@
       margin-top: 0px;
       width: 20%;
     }
+    &__labelInfo{
+      color: grey;
+    }
     @media (max-width: 480px) {
         display: block;
         &__departure-date,

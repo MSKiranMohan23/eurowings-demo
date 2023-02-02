@@ -1,0 +1,37 @@
+.flightData {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    div{
+        padding: 18px;
+    }
+
+    &__origin {
+      
+    }
+    &__destination {
+      
+    }
+    &__departure-date,
+    &__return-date,
+    &__seat-availability,
+    &__price,
+    &__offer-type,
+    &__uuid {
+      margin-top: 0px;
+      width: 20%;
+    }
+    @media (max-width: 480px) {
+        display: block;
+        &__departure-date,
+    &__return-date,
+    &__seat-availability,
+    &__price,
+    &__offer-type,
+    &__uuid {
+      margin-top: 0px;
+      width: 100%;
+    }
+    }
+  }
+  

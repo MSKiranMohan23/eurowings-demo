@@ -1,0 +1,65 @@
+.AutoSuggestInput {
+    width: 100%;
+    padding: 10px;
+
+    input {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0px 0px 0px 0px;
+        position: relative;
+        display: inline-block;
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+
+            &.highlighted {
+                background-color: #ccc;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+
+        input {
+            font-size: 14px;
+        }
+    }
+}
+
+.AutoSuggestList {
+    position: relative;
+    width: 82%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+
+    li {
+        display: block;
+        padding: 10px 15px;
+        cursor: pointer;
+
+        &.highlighted {
+            background-color: #ccc;
+        }
+
+        &:hover {
+            background-color: #f2f2f2;
+        }
+    }
+
+    @media (max-width: 480px) {
+        max-height: 150px;
+    }
+}

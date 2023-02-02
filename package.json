@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "lerna": "^6.4.1"
+  },
+  "name": "eurowings",
+  "private":"true",
+  "workspaces": [
+    "packages/ewd-app", "packages/ewd-backend"
+  ],
+  "license": "UNLICENSED"
+}

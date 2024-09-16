@@ -1,4 +1,4 @@
-# Aero-wings
+# FlightFinder React App
 
 Introducing our new flight search application, with the powerful filter feature that allows you to search for flights based on your preferred origin or destination. Simply select the desired location and our application will display all available flights matching your criteria. Discover convenient and cost-effective travel options with just a few clicks. Try it now!
 
